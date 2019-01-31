@@ -28,7 +28,7 @@ end
 ################################################################################
 def turn(board, input)
   puts "Please enter 1-9:" # ask for input
-  input = gets.chomp - 1 # get input
+  index = gets.chomp - 1 # get input
   # convert input to index
   #index = input_to_index('#{input}')
   # if index is valid
