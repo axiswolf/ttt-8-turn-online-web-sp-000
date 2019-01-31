@@ -40,8 +40,9 @@ def turn(board)
   # make the move for index
     move(board,index,"X")
   # show the board
-    #display_board(board)
-  #else
+    display_board(board)
+  else
   # ask for input again until you get valid input
     #puts "Please enter a valid position"
+  end
 end
