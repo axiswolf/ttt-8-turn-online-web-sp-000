@@ -15,7 +15,7 @@ def turn(board)
   puts "Please enter 1-9:" # ask for input
   input = gets.chomp # get input
   # convert input to index
-  index = input_to_index(input)
+  index = input_to_index('#{input}')
   # if index is valid
   # make the move for index
   # show the board
