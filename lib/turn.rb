@@ -1,3 +1,16 @@
+################################################################################
+def display_board(board)
+  puts "   |   |   "
+  puts "-----------"
+  puts "   |   |   "
+  puts "-----------"
+  puts "   |   |   "
+end
+################################################################################
+def input_to_index(input)
+  index = '#{input}' - 1
+end
+################################################################################
 valid_move = nil
 def valid_move?(board, index)
   # return true if move valid, false or nil if not valid
@@ -11,18 +24,6 @@ end
 def position_taken?(board,index)
    board[index] == " " || "" || nil # false
    (board[index] == "X") || (board[index] == "O") # true
-end
-################################################################################
-def display_board(board)
-  puts "   |   |   "
-  puts "-----------"
-  puts "   |   |   "
-  puts "-----------"
-  puts "   |   |   "
-end
-################################################################################
-def input_to_index(input)
-  index = '#{input}' - 1
 end
 ################################################################################
 def turn(board, input)
