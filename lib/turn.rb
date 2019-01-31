@@ -1,4 +1,4 @@
-################################################################################
+# Displaying the board
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -32,7 +32,7 @@ end
 ################################################################################
 def turn(board)
   puts "Please enter 1-9:" # ask for input
-  input = gets.chomp # get input
+  input = gets.strip # get input from user
   # convert input to index
   index = input_to_index(input)
   #index = input_to_index('#{input}')
