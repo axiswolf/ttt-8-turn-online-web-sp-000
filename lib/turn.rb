@@ -26,7 +26,7 @@ def position_taken?(board,index)
    (board[index] == "X") || (board[index] == "O") # true
 end
 ################################################################################
-def turn(board, input)
+def turn(board)
   puts "Please enter 1-9:" # ask for input
   index = gets.chomp - 1 # get input
   # convert input to index
