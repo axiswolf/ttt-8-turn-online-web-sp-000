@@ -43,6 +43,7 @@ def turn(board)
     display_board(board)
   else
   # ask for input again until you get valid input
-    #puts "Please enter a valid position"
+    puts "Please enter a valid position"
+    input = gets.strip
   end
 end
