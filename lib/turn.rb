@@ -32,16 +32,16 @@ end
 ################################################################################
 def turn(board)
   puts "Please enter 1-9:" # ask for input
-  input = gets.strip # get input from user
+  #input = gets.strip # get input from user
   # convert input to index
-  index = input_to_index(input)
+  #index = input_to_index(input)
   # if index is valid
-  if valid_move?(board, index) == true
+  #if valid_move?(board, index) == true
   # make the move for index
-    move(board,index,"X")
+    #move(board,index,"X")
   # show the board
-    display_board(board)
-  else
+    #display_board(board)
+  #else
   # ask for input again until you get valid input
-    puts "Please enter a valid position"
+    #puts "Please enter a valid position"
 end
