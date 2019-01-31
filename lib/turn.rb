@@ -8,7 +8,7 @@ def display_board(board)
 end
 ################################################################################
 def input_to_index(input)
-  index = '#{input}' - 1
+  index = "#{input}".to_i - 1 #to_i will convert string to integer
 end
 ################################################################################
 valid_move = nil
@@ -28,13 +28,14 @@ end
 ################################################################################
 def turn(board)
   puts "Please enter 1-9:" # ask for input
-  index = gets.chomp - 1 # get input
+  input = gets.chomp # get input
   # convert input to index
+  index = input_to_index(input)
   #index = input_to_index('#{input}')
   # if index is valid
   if valid_move?(board, index) == true
   # make the move for index
-    move(index)
+    move(board,index,"X")
   # show the board
     display_board(board)
   else
