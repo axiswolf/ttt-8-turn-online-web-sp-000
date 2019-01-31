@@ -7,12 +7,12 @@ def valid_move?(board, index)
     valid_move = false
   end
 end
-valid_move
+################################################################################
 def position_taken?(board,index)
    board[index] == " " || "" || nil # false
    (board[index] == "X") || (board[index] == "O") # true
 end
-
+################################################################################
 def display_board(board)
   puts "   |   |   "
   puts "-----------"
@@ -20,13 +20,12 @@ def display_board(board)
   puts "-----------"
   puts "   |   |   "
 end
+################################################################################
 def input_to_index(input)
   index = '#{input}' - 1
 end
-def valid_move?(move)
-
-end
-def turn(board)
+################################################################################
+def turn(board, input)
   puts "Please enter 1-9:" # ask for input
   input = gets.chomp # get input
   # convert input to index
